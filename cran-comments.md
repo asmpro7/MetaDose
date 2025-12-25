@@ -2,13 +2,13 @@
 
 
 Purpose:
-The MetaDose package provides tools to perform linear and nonlinear dose–response meta-regression on study-level summary data. It supports both continuous outcomes (mdcont()) and binary outcomes (mdbin()). Users can model dose–effect relationships using linear trends or restricted cubic splines for flexible nonlinear modeling. The package also includes visualization of dose–response curves and convenient print() and plot() methods for inspecting results.
+The MetaDose package provides tools to perform linear and nonlinear dose-response meta-regression on study-level summary data. It supports both continuous outcomes (mdcont()) and binary outcomes (mdbin()). Users can model dose-effect relationships using linear trends or restricted cubic splines for flexible nonlinear modeling. The package also includes visualization of dose-response curves and convenient print() and plot() methods for inspecting results.
 
 Key Functions:
 
-* mdcont(): Linear and nonlinear dose–response meta-regression for continuous outcomes.
+* mdcont(): Linear and nonlinear dose-response meta-regression for continuous outcomes.
 
-* mdbin(): Linear and nonlinear dose–response meta-regression for binary outcomes.
+* mdbin(): Linear and nonlinear dose-response meta-regression for binary outcomes.
 
 * print.dose(), plot.dose(): S3 methods for summarizing and plotting results returned from mdcont() and mdbin().
 
@@ -18,7 +18,7 @@ S3 Methods:
 
 * print(x) displays the linear and/or nonlinear model summaries.
 
-* plot(x) produces the corresponding dose–response plots using ggplot2.
+* plot(x) produces the corresponding dose-response plots using ggplot2.
 
 Dependencies:
 
