@@ -46,6 +46,7 @@
 #' @importFrom ggplot2 labs theme_minimal theme
 #' @importFrom ggplot2 element_text margin
 #' @importFrom stats model.matrix quantile
+#' @importFrom rlang .data
 #'
 #' @author
 #' Ahmed Abdelmageed \email{ahmedelsaeedmassad@@gmail.com}
@@ -79,7 +80,7 @@ mdcont <- function(measure = c("MD","SMD"), mean.e, sd.e, n.e,
 
   if (linear == TRUE) {
 
-    res.lin <- metafor::rma(Calc_data$yi, Calc_data$vi, mods = ~ dose, data = Calc_data)
+    res.lin <- metafor::rma(.data$yi, .data$vi, mods = ~ dose, data = Calc_data)
 
     newdose <- data.frame(dose = seq(min(Calc_data$dose), max(Calc_data$dose), length=100))
 
@@ -95,13 +96,13 @@ mdcont <- function(measure = c("MD","SMD"), mean.e, sd.e, n.e,
 
     plot_linear <- ggplot2::ggplot() +
       ggplot2::geom_ribbon(data = doseModel_df,
-                           ggplot2::aes(x = doseModel_df$dose, ymin = doseModel_df$ci.lb, ymax = doseModel_df$ci.ub),
+                           ggplot2::aes(x = .data$dose, ymin = .data$ci.lb, ymax = .data$ci.ub),
                   fill = "#56B4E9", alpha = 0.3) +
       ggplot2::geom_line(data = doseModel_df,
-                         ggplot2::aes(x = doseModel_df$dose, y = doseModel_df$pred),
+                         ggplot2::aes(x = .data$dose, y = .data$pred),
                 color = "#0072B2", linewidth = 1) +
       ggplot2::geom_point(data = Calc_data,
-                          ggplot2::aes(x = Calc_data$dose, y = Calc_data$yi, size = Calc_data$weight),
+                          ggplot2::aes(x = .data$dose, y = .data$yi, size = .data$weight),
                  shape = 21, fill = "gray70", color = "black", alpha = 0.8) +
       ggplot2::scale_size_continuous(range = c(2, 8), guide = "none") +
       ggplot2::labs(x = x_axis, y = y_axis) +
@@ -122,7 +123,7 @@ mdcont <- function(measure = c("MD","SMD"), mean.e, sd.e, n.e,
 
     knots <- quantile(Calc_data$dose, knots)
 
-    res.rcs <- metafor::rma(Calc_data$yi, Calc_data$vi, mods = ~ rms::rcs(dose, knots), data = Calc_data)
+    res.rcs <- metafor::rma(.data$yi, .data$vi, mods = ~ rms::rcs(dose, knots), data = Calc_data)
 
     newdose <-data.frame(dose = seq(min(Calc_data$dose), max(Calc_data$dose), length=100))
 
@@ -140,13 +141,13 @@ mdcont <- function(measure = c("MD","SMD"), mean.e, sd.e, n.e,
 
     plot_nonlinear <- ggplot2::ggplot() +
       ggplot2::geom_ribbon(data = doseModel_df,
-                           ggplot2::aes(x = doseModel_df$dose, ymin = doseModel_df$ci.lb, ymax = doseModel_df$ci.ub),
+                           ggplot2::aes(x = .data$dose, ymin = .data$ci.lb, ymax = doseModel_df$ci.ub),
                   fill = "#56B4E9", alpha = 0.3) +
       ggplot2::geom_line(data = doseModel_df,
-                         ggplot2::aes(x = doseModel_df$dose, y = doseModel_df$pred),
+                         ggplot2::aes(x = .data$dose, y = .data$pred),
                 color = "#0072B2", linewidth = 1) +
       ggplot2::geom_point(data = Calc_data,
-                          ggplot2::aes(x = doseModel_df$dose, y = doseModel_df$yi, size = doseModel_df$weight),
+                          ggplot2::aes(x = .data$dose, y = .data$yi, size = .data$weight),
                  shape = 21, fill = "gray70", color = "black", alpha = 0.8) +
       ggplot2::scale_size_continuous(range = c(2, 8), guide = "none") +
       ggplot2::labs(x = x_axis, y = y_axis) +

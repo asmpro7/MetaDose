@@ -21,5 +21,6 @@ Encoding: UTF-8
 Imports: 
     ggplot2,
     metafor,
-    rms
+    rms,
+    rlang 
 RoxygenNote: 7.3.3
