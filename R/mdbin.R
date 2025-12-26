@@ -75,7 +75,7 @@ mdbin <- function(measure = c("RR","OR"), event.e, n.e,
 
   if (linear == TRUE) {
 
-    res.lin <- metafor::rma(.data$yi, .data$vi, mods = ~ dose, data = Calc_data)
+    res.lin <- metafor::rma(Calc_data$yi, Calc_data$vi, mods = ~ dose, data = Calc_data)
 
     newdose <- data.frame(dose = seq(min(Calc_data$dose), max(Calc_data$dose), length=100))
 
@@ -118,7 +118,7 @@ mdbin <- function(measure = c("RR","OR"), event.e, n.e,
 
     knots <- quantile(Calc_data$dose, knots)
 
-    res.rcs <- metafor::rma(.data$yi, .data$vi, mods = ~ rms::rcs(dose, knots), data = Calc_data)
+    res.rcs <- metafor::rma(Calc_data$yi, Calc_data$vi, mods = ~ rms::rcs(dose, knots), data = Calc_data)
 
     newdose <-data.frame(dose = seq(min(Calc_data$dose), max(Calc_data$dose), length=100))
 
