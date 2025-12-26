@@ -141,7 +141,7 @@ mdcont <- function(measure = c("MD","SMD"), mean.e, sd.e, n.e,
 
     plot_nonlinear <- ggplot2::ggplot() +
       ggplot2::geom_ribbon(data = doseModel_df,
-                           ggplot2::aes(x = .data$dose, ymin = .data$ci.lb, ymax = doseModel_df$ci.ub),
+                           ggplot2::aes(x = .data$dose, ymin = .data$ci.lb, ymax = .data$ci.ub),
                   fill = "#56B4E9", alpha = 0.3) +
       ggplot2::geom_line(data = doseModel_df,
                          ggplot2::aes(x = .data$dose, y = .data$pred),
