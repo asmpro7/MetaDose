@@ -13,6 +13,9 @@ The workflow is:
 
 1. **Model:** Use `mdcont()` for continuous outcomes or `mdbin()` for binary outcomes to estimate linear or nonlinear dose-response relationships, including restricted cubic spline modeling.
 2. **Visualize:** Use the returned `dose` object’s `plot()` method to generate publication-ready dose-response plots, and `print()` to inspect the model summaries.
+3. **Interact:** For users who prefer a graphical interface, `MetaDose` provides an interactive Shiny application. The app allows uploading data, performing linear or nonlinear dose-response meta-regression, and visualizing results without writing R code.
+
+The Shiny app is hosted online and can be accessed here: [MetaDose Shiny App](https://asmpro.shinyapps.io/MetaDose/)
 
 This approach helps researchers understand the relationship between dose and outcome in a meta-analytic context, providing both numerical and graphical summaries.
 
