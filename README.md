@@ -1,5 +1,7 @@
 <p align="center">
   <h1 align="center"> MetaDose </h1>
+<p align="center"> <img src="https://github.com/user-attachments/assets/89b1338a-2638-44ac-afb1-065fe3c92f41" data-canonical-src="https://github.com/user-attachments/assets/89b1338a-2638-44ac-afb1-065fe3c92f41" width="300" height="300" />
+<p align="center">
 
 <p>
 <h2 align="center" id="MetaDesc">Linear and Nonlinear Dose-Response Meta-Regression</h2>
