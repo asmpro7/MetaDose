@@ -126,7 +126,7 @@ ui <- navbarPage(
         hr(),
         p(
           "MetaDose provides tools for conducting linear and nonlinear dose-response meta-regression using study-level summary data. ",
-          "It supports both continuous and binary outcomes and allows modeling of dose–effect relationships ",
+          "It supports both continuous and binary outcomes and allows modeling of dose-effect relationships ",
           "using linear trends or nonlinear restricted cubic splines, with built-in visualization."
         )
       ),
