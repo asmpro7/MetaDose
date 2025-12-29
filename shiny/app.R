@@ -14,6 +14,9 @@ ui <- navbarPage(
     primary = "#2C3E50",
     base_font = font_google("Inter")
   ),
+  header = tags$head(
+    tags$link(rel = "icon", type = "image/x-icon", href = "favicon.ico")
+  ),
 
   # ============================
   # Tab 1: Data & Settings
