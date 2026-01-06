@@ -1,13 +1,12 @@
-#' Print and Plot Methods for Dose–Response Meta-Regression Objects
+#' Print and Plot Methods for Dose-Response Meta-Regression Objects
 #'
 #' @description
-#' S3 methods for objects of class \code{"dose"} returned by
-#' \code{\link{mdcont}} and \code{\link{mdbin}}.
+#' S3 methods for objects of class `dose` returned by `mdcont()` and `mdbin()` functions.
 #'
 #' \itemize{
 #'   \item \code{print.dose} displays summaries of the fitted linear and/or
-#'   nonlinear dose–response meta-regression models.
-#'   \item \code{plot.dose} visualizes the fitted dose–response curves produced
+#'   nonlinear dose-response meta-regression models.
+#'   \item \code{plot.dose} visualizes the fitted dose-response curves produced
 #'   by the meta-regression models.
 #' }
 #'
@@ -22,7 +21,7 @@
 #'
 #' \itemize{
 #'   \item \code{print.dose} prints model summaries to the console.
-#'   \item \code{plot.dose} draws dose–response plots in the active graphics device.
+#'   \item \code{plot.dose} draws dose-response plots in the active graphics device.
 #' }
 #'
 #' The original object \code{x} is returned invisibly.

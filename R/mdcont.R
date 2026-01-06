@@ -1,9 +1,9 @@
-#' Linear and Nonlinear Dose–Response Meta-Regression for Continuous Outcomes
+#' Linear and Nonlinear Dose-Response Meta-Regression for Continuous Outcomes
 #'
 #' @description
-#' Performs linear and/or nonlinear dose–response meta-regression for continuous
+#' Performs linear and/or nonlinear dose-response meta-regression for continuous
 #' outcomes using study-level summary data. The function supports mean difference
-#' (MD) and standardized mean difference (SMD) effect measures and fits models
+#' (`MD`) and standardized mean difference (`SMD`) effect measures and fits models
 #' across different dose levels using meta-regression techniques.
 #'
 #' @param measure Character string specifying the effect size measure.
@@ -17,8 +17,8 @@
 #' @param n.c Numeric vector of sample sizes in the control group.
 #' @param dose Numeric vector of dose levels corresponding to each study.
 #' @param data A data frame containing the meta-analysis data.
-#' @param linear Logical; if \code{TRUE}, a linear dose–response model is fitted.
-#' @param nonlinear Logical; if \code{TRUE}, a nonlinear dose–response model using
+#' @param linear Logical; if \code{TRUE}, a linear dose-response model is fitted.
+#' @param nonlinear Logical; if \code{TRUE}, a nonlinear dose-response model using
 #' restricted cubic splines is fitted.
 #' @param x_axis Character string specifying the x-axis label for plots.
 #' @param y_axis Character string specifying the y-axis label for plots.
@@ -27,16 +27,16 @@
 #'
 #' @details
 #' The function first computes effect sizes and their variances from continuous
-#' outcome data. It then fits a linear dose–response meta-regression model and/or
+#' outcome data. It then fits a linear dose-response meta-regression model and/or
 #' a nonlinear model using restricted cubic splines, depending on user selection.
-#' Corresponding dose–response plots are generated for visualization.
+#' Corresponding dose-response plots are generated for visualization.
 #'
 #' @return
 #' An S3 object of class `dose`, which is a list containing:
-#' \item{linear_model}{The fitted linear dose–response meta-regression model.}
-#' \item{linear_plot}{A plot of the linear dose–response relationship.}
-#' \item{nonlinear_model}{The fitted nonlinear dose–response meta-regression model.}
-#' \item{nonlinear_plot}{A plot of the nonlinear dose–response relationship.}
+#' \item{linear_model}{The fitted linear dose-response meta-regression model.}
+#' \item{linear_plot}{A plot of the linear dose-response relationship.}
+#' \item{nonlinear_model}{The fitted nonlinear dose-response meta-regression model.}
+#' \item{nonlinear_plot}{A plot of the nonlinear dose-response relationship.}
 #'
 #' @importFrom metafor escalc rma predict.rma
 #' @importFrom rms rcs
@@ -52,7 +52,7 @@
 #' Ahmed Abdelmageed \email{ahmedelsaeedmassad@@gmail.com}
 #'
 #' @seealso
-#' \code{\link{mdbin}} for dose–response meta-regression with binary outcomes.
+#' \code{\link{mdbin}} for dose-response meta-regression with binary outcomes.
 #'
 #' @export
 

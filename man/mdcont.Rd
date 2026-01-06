@@ -2,7 +2,7 @@
 % Please edit documentation in R/mdcont.R
 \name{mdcont}
 \alias{mdcont}
-\title{Linear and Nonlinear Dose–Response Meta-Regression for Continuous Outcomes}
+\title{Linear and Nonlinear Dose-Response Meta-Regression for Continuous Outcomes}
 \usage{
 mdcont(
   measure = c("MD", "SMD"),
@@ -42,9 +42,9 @@ mean difference.}
 
 \item{data}{A data frame containing the meta-analysis data.}
 
-\item{linear}{Logical; if \code{TRUE}, a linear dose–response model is fitted.}
+\item{linear}{Logical; if \code{TRUE}, a linear dose-response model is fitted.}
 
-\item{nonlinear}{Logical; if \code{TRUE}, a nonlinear dose–response model using
+\item{nonlinear}{Logical; if \code{TRUE}, a nonlinear dose-response model using
 restricted cubic splines is fitted.}
 
 \item{x_axis}{Character string specifying the x-axis label for plots.}
@@ -56,25 +56,25 @@ restricted cubic spline model.}
 }
 \value{
 An S3 object of class `dose`, which is a list containing:
-\item{linear_model}{The fitted linear dose–response meta-regression model.}
-\item{linear_plot}{A plot of the linear dose–response relationship.}
-\item{nonlinear_model}{The fitted nonlinear dose–response meta-regression model.}
-\item{nonlinear_plot}{A plot of the nonlinear dose–response relationship.}
+\item{linear_model}{The fitted linear dose-response meta-regression model.}
+\item{linear_plot}{A plot of the linear dose-response relationship.}
+\item{nonlinear_model}{The fitted nonlinear dose-response meta-regression model.}
+\item{nonlinear_plot}{A plot of the nonlinear dose-response relationship.}
 }
 \description{
-Performs linear and/or nonlinear dose–response meta-regression for continuous
+Performs linear and/or nonlinear dose-response meta-regression for continuous
 outcomes using study-level summary data. The function supports mean difference
-(MD) and standardized mean difference (SMD) effect measures and fits models
+(`MD`) and standardized mean difference (`SMD`) effect measures and fits models
 across different dose levels using meta-regression techniques.
 }
 \details{
 The function first computes effect sizes and their variances from continuous
-outcome data. It then fits a linear dose–response meta-regression model and/or
+outcome data. It then fits a linear dose-response meta-regression model and/or
 a nonlinear model using restricted cubic splines, depending on user selection.
-Corresponding dose–response plots are generated for visualization.
+Corresponding dose-response plots are generated for visualization.
 }
 \seealso{
-\code{\link{mdbin}} for dose–response meta-regression with binary outcomes.
+\code{\link{mdbin}} for dose-response meta-regression with binary outcomes.
 }
 \author{
 Ahmed Abdelmageed \email{ahmedelsaeedmassad@gmail.com}

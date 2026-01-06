@@ -2,7 +2,8 @@ Package: MetaDose
 Type: Package
 Title: Dose-Response Meta-Regression for Meta-Analysis
 Version: 1.0.0
-AAuthors@R: person(
+Date: 2026-01-08
+Authors@R: person(
       "Ahmed", "Abdelmageed",
       email = "ahmedelsaeedmassad@gmail.com",
       role = c("cre", "aut"), comment = c(ORCID = "0009-0002-7902-690X"))

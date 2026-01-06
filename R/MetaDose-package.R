@@ -1,14 +1,14 @@
-#' MetaDose: Dose–Response Meta-Regression for Meta-Analysis
+#' MetaDose: Dose-Response Meta-Regression for Meta-Analysis
 #'
 #' @description
 #' The `MetaDose` package provides tools for conducting linear and nonlinear
-#' dose–response meta-regression using study-level summary data. It supports both
-#' continuous and binary outcomes and allows modeling of dose–effect relationships
+#' dose-response meta-regression using study-level summary data. It supports both
+#' continuous and binary outcomes and allows modeling of dose-effect relationships
 #' using linear trends or nonlinear restricted cubic splines.
 #'
 #' The package is designed to facilitate transparent, flexible, and reproducible
-#' dose–response meta-analyses, with built-in visualization of fitted
-#' dose–response curves.
+#' dose-response meta-analyses, with built-in visualization of fitted
+#' dose-response curves.
 #'
 #' @author
 #' Ahmed Abdelmageed \email{ahmedelsaeedmassad@@gmail.com}
@@ -16,8 +16,8 @@
 #' @seealso
 #' Useful functions:
 #' \itemize{
-#'   \item \code{\link{mdcont}} for dose–response meta-regression with continuous outcomes.
-#'   \item \code{\link{mdbin}} for dose–response meta-regression with binary outcomes.
+#'   \item \code{\link{mdcont}} for dose-response meta-regression with continuous outcomes.
+#'   \item \code{\link{mdbin}} for dose-response meta-regression with binary outcomes.
 #' }
 #'
 #' @keywords package meta-analysis dose-response meta-regression
