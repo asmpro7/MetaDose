@@ -54,6 +54,40 @@
 #' @seealso
 #' \code{\link{mdbin}} for dose-response meta-regression with binary outcomes.
 #'
+#' @examples
+#' # Create a small example dataset
+#' study_data <- data.frame(
+#'   mean.e = c(5.2, 6.1, 7.0, 6.5),
+#'   sd.e   = c(1.1, 1.3, 1.2, 1.0),
+#'   n.e    = c(40, 35, 50, 45),
+#'   mean.c = c(4.8, 5.5, 6.2, 5.9),
+#'   sd.c   = c(1.0, 1.2, 1.1, 1.1),
+#'   n.c    = c(38, 33, 48, 42),
+#'   dose   = c(10, 20, 30, 40)
+#' )
+#'
+#' # Fit a dose-response meta-regression model
+#' res <- mdcont(
+#'   measure = "MD",
+#'   mean.e  = mean.e,
+#'   sd.e    = sd.e,
+#'   n.e     = n.e,
+#'   mean.c  = mean.c,
+#'   sd.c    = sd.c,
+#'   n.c     = n.c,
+#'   dose    = dose,
+#'   data    = study_data,
+#'   linear  = TRUE,
+#'   nonlinear = TRUE
+#' )
+#'
+#' # Print results
+#' print(res)
+#'
+#' # Access components
+#' # res$linear_model
+#' # res$nonlinear_model
+#'
 #' @export
 
 mdcont <- function(measure = c("MD","SMD"), mean.e, sd.e, n.e,
