@@ -2,6 +2,39 @@
   <h1 align="center"> MetaDose </h1>
 <p align="center"> <img src="https://github.com/user-attachments/assets/89b1338a-2638-44ac-afb1-065fe3c92f41" data-canonical-src="https://github.com/user-attachments/assets/89b1338a-2638-44ac-afb1-065fe3c92f41" width="300" height="300" />
 <p align="center">
+  <!-- CRAN version -->
+  <a href="https://CRAN.R-project.org/package=MetaDose">
+    <img src="https://www.r-pkg.org/badges/version/MetaDose" alt="CRAN version"/>
+  </a>
+  
+  <!-- CRAN checks -->
+  <a href="https://cran.r-project.org/web/checks/check_results_MetaDose.html">
+    <img src="https://badges.cranchecks.info/worst/MetaDose.svg" alt="CRAN checks"/>
+  </a>
+  
+  <!-- Lifecycle -->
+  <a href="https://lifecycle.r-lib.org/articles/stages.html">
+    <img src="https://img.shields.io/badge/lifecycle-stable-brightgreen.svg" alt="lifecycle"/>
+  </a>
+
+  <!-- CRAN downloads -->
+  <a href="https://CRAN.R-project.org/package=MetaDose">
+    <img src="https://cranlogs.r-pkg.org/badges/MetaDose" alt="CRAN downloads"/>
+  </a>
+  <a href="https://CRAN.R-project.org/package=MetaDose">
+    <img src="https://cranlogs.r-pkg.org/badges/grand-total/MetaDose" alt="CRAN total downloads"/>
+  </a>
+  
+  <!-- License -->
+  <a href="LICENSE">
+    <img src="https://img.shields.io/cran/l/MetaDose" alt="License"/>
+  </a>
+  
+  <!-- DOI -->
+  <a href="https://doi.org/10.32614/CRAN.package.MetaDose">
+    <img src="https://zenodo.org/badge/DOI/10.32614/CRAN.package.MetaDose.svg" alt="DOI"/>
+  </a>
+</p>
 
 <p>
 <h2 align="center" id="MetaDesc">Linear and Nonlinear Dose-Response Meta-Regression</h2>
@@ -24,6 +57,12 @@ This approach helps researchers understand the relationship between dose and out
 ---
 
 ## Installation
+
+Install the stable version of `MetaDose` from CRAN with:
+
+```r
+install.packages("MetaDose")
+```
 
 Install the development version of `MetaDose` from GitHub with:
 
