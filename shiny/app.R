@@ -108,16 +108,16 @@ ui <- navbarPage(
       card(
         card_header("About MetaDose"),
         p(strong("Title:"), " Dose-Response Meta-Regression for Meta-Analysis"),
-        p(strong("Version:"), " 1.0.0"),
+        p(strong("Version:"), " 1.0.1"),
         p(strong("Author:"),
           HTML('Ahmed Abdelmageed')
         ),
         p(strong("ORCID:"),
-          HTML('<a href="https://orcid.org/0009-0002-7902-690X" target="_blank">0009-0002-7902-690</a>')
+          HTML('<a href="https://orcid.org/0009-0002-7902-690X" target="_blank">0009-0002-7902-690X</a>')
         ),
         p(strong("Email:"), "ahmedelsaeedmassad@gmail.com"),
         p(strong("CRAN:"),
-          HTML('To be assign')
+          HTML('<a href="https://cran.r-project.org/package=MetaDose" target="_blank">https://cran.r-project.org/package=MetaDose</a>')
         ),
         p(strong("GitHub:"),
           HTML('<a href="https://github.com/asmpro7/MetaDose/" target="_blank">https://github.com/asmpro7/MetaDose/</a>')
@@ -135,7 +135,7 @@ ui <- navbarPage(
       card(
         card_header("Citation"),
         verbatimTextOutput("citation_text"),
-        p("DOI: ", em("to be assigned"))
+        p("DOI: ", em("10.32614/CRAN.package.MetaDose"))
       )
     )
   )
@@ -337,8 +337,8 @@ server <- function(input, output, session) {
   # ----------------------------
   output$citation_text <- renderText({
     paste0(
-      "Ahmed Abdelmageed (2025). MetaDose: Dose-Response Meta-Regression for Meta-Analysis. ",
-      "R package version 1.0.0. DOI: <to be assigned>"
+      "Ahmed Abdelmageed (2026). MetaDose: Dose-Response Meta-Regression for Meta-Analysis.",
+      " R package version 1.0.1, https://CRAN.R-project.org/package=MetaDose."
     )
   })
 }
